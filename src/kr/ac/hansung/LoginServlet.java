@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter out = response.getWriter(); // printwirter의 객체 out에 response를 받아옴
 		
 		String htmlResponse = "<html>";
-		htmlResponse += "<h2> your name is " + username + "<br/>";
+		htmlResponse += "<h2> your username is " + username + "<br/>";
 		htmlResponse += " your password is " + password + "</h2>";
 		htmlResponse += "</html>";
 		out.println(htmlResponse); // client에 username, password를 전송한다.
